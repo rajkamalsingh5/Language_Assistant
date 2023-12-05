@@ -1,0 +1,219 @@
+*{
+    margin: 0%;
+    padding: 0;
+    font-family:sans-serif;
+    
+    /* box-sizing: border-box; */
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background:var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: azure;
+}
+:root{
+    --primary-color:linear-gradient(45deg,#010758,#490d61);
+    /* --secondary-color:#212121; */
+}
+.darkTheme{
+    --primary-color:#212121;
+    
+}
+.hero h1{
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+textarea{
+    width: 600px;
+    height: 250px;
+    background-color: #403d84;
+    color: #ff44;
+    font-size: 25px;
+    border: 0;
+    font-style: italic;
+    outline: 0;
+    resize: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+font-weight: 400;
+}
+textarea ::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+display: flex;
+align-items: center;
+}
+button img{
+    width: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#chand{
+    cursor: pointer;
+    width: 90px;
+     height: 90px;
+    filter: invert(100%);
+    /* background-color:linear-gradient(45deg,#010758,#490d61); */
+padding-bottom: 35px;
+margin-right: 1000px;
+}
+select{
+    flex: 1;
+    color: #fff;
+    background-color: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    outline: none;
+    border: 0;
+    border-radius: 35px;
+    align-items: center;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.5em;
+    
+}
+#loader{
+ align-items: center;
+ display: flex;
+ justify-content: center;
+ background-repeat: no-repeat;
+ background-size: 10vmax 10vmin;
+ background-color: #ddd;
+
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#loader img{
+    width: 50%;
+}
+.translated-ltr{
+    margin-top: -40px;
+}
+.translated-ltr{
+    margin-top: -40px;
+}
+.goog-te-banner-frame{
+    display: none;
+    margin-top: -20px;
+}
+.goog-logo-link{
+    display: none !important;
+}
+.goog-te-gadget{
+    color: transparent !important;
+}
+#google_element{
+    width: 170px;
+    height: 50px;
+    border-radius: 50px;
+    color: #ff2963;
+    background-color: #ff2963;
+    position: fixed;
+    right: 100px;
+    bottom: 70px;
+}
+@media (max-width:500px) {
+    #google_element{
+       
+        width: 70px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        border-radius: 50px;
+        color: #ff2963;
+        background-color: #ff2963;
+        position:absolute;
+        margin-top: 40px;
+        
+    }
+    
+    h1{
+        padding-top: 90px;
+    }
+    textarea{
+    width: 400px;
+    height: 184px;
+    background-color: #403d84;
+    color: #ff44;
+    font-size: 29px;
+    border: 0;
+    font-style: italic;
+    outline: 0;
+    resize: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 24px;
+    font-weight: 400;
+}
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+
+}  
+.hero{
+min-height:100vh;
+position: fixed;
+}
+#chand{
+margin-right: 307px;
+}
+   #loader img{
+    width: 80%;
+   }
+}
+@media (max-width:1000px) {
+
+    h1{
+        padding-top: 30px;
+    }
+    #chand{
+        margin-right: 307px;
+        }
+        textarea{
+            width: 400px;
+            height: 154px;
+            background-color: #403d84;
+            color: #ff44;
+            font-size: 29px;
+            border: 0;
+            font-style: italic;
+            outline: 0;
+            resize: none;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            padding: 24px;
+            font-weight: 400;
+        }
+}
